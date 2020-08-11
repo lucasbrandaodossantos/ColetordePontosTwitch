@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Coletor de Pontos Twitch",
+    "version": "0.1",
+    "content_scripts" : [
+        {
+            "matches":["https://www.twitch.tv/rubini",
+                 "https://www.twitch.tv/buozzi",
+                 "https://www.twitch.tv/nattank",
+                 "https://www.twitch.tv/jpmmmv",
+                "https://www.twitch.tv/cidcidoso"],
+            "css": ["style.css"],
+            "js": ["extension.js"]
+        }
+    ]
+}
