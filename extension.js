@@ -4,7 +4,6 @@ const interval = setInterval(() => {
     console.log("Entrei na função")
 
     const button = document.querySelector(".tw-button__text");
-    console.log(button)
     //Identificar o ícone de pontos
     if (button) {
         button.click();
