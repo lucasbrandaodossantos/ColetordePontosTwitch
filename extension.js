@@ -1,13 +1,17 @@
 console.log("Entrei na extensão!")
 //Ler a página da Twitch
 const interval = setInterval(() => {
+    console.log("Entrei na função")
 
-    const button = document.querySelector(".tw-button tw-button--success tw-interactive");
+    const button = document.querySelector(".tw-button__text");
+    console.log(button)
+    //Identificar o ícone de pontos
     if (button) {
-        //Identificar o ícone de pontos
-        button.addEventListener("click", () => {
-            console.log("ponto coletado!");
-            clearInterval(interval)
-        })
+        button.click()
+        console.log("PONTO COLETADO!!");
+        clearInterval(interval)
+    } else {
+        console.log("Botão não encontrado!");        
     }
+
 }, 3000)
