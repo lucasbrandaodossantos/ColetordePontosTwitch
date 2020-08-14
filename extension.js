@@ -7,7 +7,7 @@ const interval = setInterval(() => {
     console.log(button)
     //Identificar o ícone de pontos
     if (button) {
-        button.click()
+        button.click();
         console.log("PONTO COLETADO!!");
         clearInterval(interval)
     } else {
